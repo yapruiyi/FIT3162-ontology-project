@@ -1,2 +1,2 @@
 # FIT3162-ontology-project
-testing hello worlde...
+testing hello world
