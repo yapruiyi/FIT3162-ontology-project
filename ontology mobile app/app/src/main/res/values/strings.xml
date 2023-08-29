@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">User Interface</string>
+    <string name="listofpossibleresults"><u>List of Possible Results</u></string>
+    <string name="listofterminologies"><u>List of Terminologies</u></string>
+</resources>
