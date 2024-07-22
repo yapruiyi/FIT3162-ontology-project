@@ -1,0 +1,1263 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#"
+     xml:base="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasDescription -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasDescription">
+        <hasDescription>flow of blood from heart is blocked</hasDescription>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSeverity -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSeverity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AVNodalReentrantTachycardia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AVNodalReentrantTachycardia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SupraventricularArrhythymia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Angina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Angina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hasDescription>Angina is a type of chest pain caused by reduced blood flow to the heart.</hasDescription>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Arrhythmia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Arrhythmia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hasDescription>An arrhythmia, or irregular heartbeat, is a problem with the rate or rhythm of your heartbeat.</hasDescription>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFibrillation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFibrillation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Lightheadedness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hasDescription>Atrial fibrillation (AFib) is an irregular and often very rapid heart rhythm</hasDescription>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFlutter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFlutter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SupraventricularArrhythymia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BicuspidAorticValve -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BicuspidAorticValve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#CongenitalHeartDisease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BiventricularHeartFailure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BiventricularHeartFailure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Angina"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Arrhythmia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFibrillation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartFailure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#CongenitalHeartDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#CongenitalHeartDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hasDescription>Congenital heart disease is one or more problems with the heart&apos;s structure that exist since birth.</hasDescription>
+        <rdfs:comment>No visual display</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Disease"/>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Angina"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Arrhythmia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFibrillation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#People"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Arrhythmia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#CongenitalHeartDisease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Angina"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Arrhythmia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFibrillation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#CongenitalHeartDisease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartFailure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartFailure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartFailure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <hasDescription>Heart failure, also known as congestive heart failure, is a condition that develops when your heart doesn&apos;t pump enough blood for your body&apos;s needs</hasDescription>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Left-sidedHeartFailure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Left-sidedHeartFailure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Lightheadedness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Lightheadedness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFibrillation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Long-standingPersistentAfib -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Long-standingPersistentAfib">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFibrillation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Man -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Man">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Patient"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Woman"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Angina"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartFailure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#CongenitalHeartDisease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartFailure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ParoxysmalAfib -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ParoxysmalAfib">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFibrillation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#People -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#People"/>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PersistentAfib -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PersistentAfib">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFibrillation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureAtrialContractions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureAtrialContractions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SupraventricularArrhythymia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureVentricularContractions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureVentricularContractions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularArrhythmia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PulmonaryStenosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PulmonaryStenosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#CongenitalHeartDisease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Right-sidedHeartFailure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Right-sidedHeartFailure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Angina"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Arrhythmia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFibrillation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#CongenitalHeartDisease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartFailure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#StableAngina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#StableAngina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Angina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SubaorticStenosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SubaorticStenosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#CongenitalHeartDisease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SupraventricularArrhythymia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SupraventricularArrhythymia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Arrhythmia"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularArrhythmia"/>
+        <hasDescription>Supraventricular Tachycardia, also called SVT, is usually caused by either an abnormal electrical circuit or rapidly firing cells in the upper chambers of the heart.</hasDescription>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms"/>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#UnstableAngina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#UnstableAngina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Angina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VariantAngina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VariantAngina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Angina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularArrhythmia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularArrhythmia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Arrhythmia"/>
+        <hasDescription>A Ventricular arrhythmia is a condition which originates in the lower chambers of the heart (ventricles). We usually find the problem when we hear three or more beats in succession coming from one of the ventricles</hasDescription>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularFibrillation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularFibrillation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularArrhythmia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularTachycardia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularTachycardia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularArrhythmia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Woman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Woman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AVNodalReentrantTachycardia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AVNodalReentrantTachycardia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AVNodalReentrantTachycardia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFlutter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFlutter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFlutter"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BicuspidAorticValve -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BicuspidAorticValve">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BicuspidAorticValve"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BiventricularHeartFailure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BiventricularHeartFailure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BiventricularHeartFailure"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BicuspidAorticValve"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PulmonaryStenosis"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SubaorticStenosis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BicuspidAorticValve"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PulmonaryStenosis"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SubaorticStenosis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Left-sidedHeartFailure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Left-sidedHeartFailure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Left-sidedHeartFailure"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Lightheadedness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Lightheadedness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Lightheadedness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Long-standingPersistentAfib -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Long-standingPersistentAfib">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Long-standingPersistentAfib"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Lightheadedness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BicuspidAorticValve"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PulmonaryStenosis"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SubaorticStenosis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ParoxysmalAfib -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ParoxysmalAfib">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ParoxysmalAfib"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Lightheadedness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PersistentAfib -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PersistentAfib">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PersistentAfib"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Lightheadedness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureAtrialContractions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureAtrialContractions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureAtrialContractions"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureVentricularContractions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureVentricularContractions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureVentricularContractions"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PulmonaryStenosis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PulmonaryStenosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PulmonaryStenosis"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Right-sidedHeartFailure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Right-sidedHeartFailure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Right-sidedHeartFailure"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BicuspidAorticValve"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PulmonaryStenosis"/>
+        <isSymptomOf rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SubaorticStenosis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#StableAngina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#StableAngina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#StableAngina"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SubaorticStenosis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SubaorticStenosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SubaorticStenosis"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#UnstableAngina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#UnstableAngina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#UnstableAngina"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VariantAngina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VariantAngina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VariantAngina"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularFibrillation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularFibrillation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularFibrillation"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularTachycardia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularTachycardia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularTachycardia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AVNodalReentrantTachycardia">
+        <hasDescription>AVNRT is a type of paroxysmal supraventricular tachycardia that results due to the presence of a reentry circuit within or adjacent to the AV node</hasDescription>
+        <hasSeverity>low</hasSeverity>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFlutter">
+        <hasSeverity>high</hasSeverity>
+        <hasDescription>Atrial flutter is a type of heart rhythm disorder in which the heart&apos;s upper chambers (atria) beat too quickly</hasDescription>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BicuspidAorticValve">
+        <hasSeverity>low</hasSeverity>
+        <hasDescription>Bicuspid aortic valve is a type of abnormality in the aortic valve in the heart. This condition is present from birth.</hasDescription>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BiventricularHeartFailure">
+        <hasDescription>In biventricular heart failure, both sides of the heart are affected. This can cause the same symptoms as both left-sided and right-sided heart failure</hasDescription>
+        <hasSeverity>high</hasSeverity>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack">
+        <hasSeverity>high</hasSeverity>
+        <hasDescription>A heart attack is a serious condition where the supply of blood to the heart is suddenly blocked.</hasDescription>
+        <rdfs:comment>Has visual display</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Left-sidedHeartFailure">
+        <hasSeverity>high</hasSeverity>
+        <hasDescription>The left ventricle of the heart no longer pumps enough blood around the body.</hasDescription>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Long-standingPersistentAfib">
+        <hasSeverity>high</hasSeverity>
+        <hasDescription>Long-standing persistent atrial fibrillation lasts for more than a year</hasDescription>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ParoxysmalAfib">
+        <hasDescription>This type of Afib occurs intermittently and stops on its own within seven days.</hasDescription>
+        <hasSeverity>low</hasSeverity>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PersistentAfib">
+        <hasSeverity>medium</hasSeverity>
+        <hasDescription>Persistent atrial fibrillation occurs when the abnormal heart rhythm you experience lasts for more than a week. It could eventually return to normal on its own</hasDescription>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureAtrialContractions">
+        <hasDescription>These are early extra beats. They’re harmless and generally don&apos;t need treatment.</hasDescription>
+        <hasSeverity>low</hasSeverity>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureVentricularContractions">
+        <hasDescription>Premature ventricular contractions (PVCs) are extra heartbeats that begin in one of the heart&apos;s two lower pumping chambers (ventricles).</hasDescription>
+        <hasSeverity>low</hasSeverity>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PulmonaryStenosis">
+        <hasSeverity>low</hasSeverity>
+        <hasDescription>Pulmonary valve stenosis is a type of heart valve disease that involves the narrowing of the pulmonary valve.</hasDescription>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Right-sidedHeartFailure">
+        <hasSeverity>high</hasSeverity>
+        <hasDescription>The right ventricle of the heart is too weak to pump enough blood to the lungs.</hasDescription>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#StableAngina">
+        <hasDescription>Stable angina is chest pain or discomfort that most often occurs with activity or emotional stress</hasDescription>
+        <hasSeverity>low</hasSeverity>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SubaorticStenosis">
+        <hasDescription>Subaortic stenosis is a narrowing (stenosis) of the area underneath, the aortic valve, that causes some degree of obstruction or blockage of the blood flow through the heart.</hasDescription>
+        <hasSeverity>medium</hasSeverity>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#UnstableAngina">
+        <hasSeverity>high</hasSeverity>
+        <hasDescription>Unstable angina is chest discomfort or pain caused by an insufficient flow of blood and oxygen to the heart. It is part of the acute coronary syndromes and may lead up to a heart attack.</hasDescription>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VariantAngina">
+        <hasDescription>A known clinical condition characterized by chest discomfort or pain at rest with transient electrocardiographic changes in the ST segment</hasDescription>
+        <hasSeverity>medium</hasSeverity>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularFibrillation">
+        <hasSeverity>high</hasSeverity>
+        <hasDescription>Ventricular fibrillation is a type of arrhythmia, or irregular heartbeat, that affects your heart&apos;s ventricles.</hasDescription>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularTachycardia">
+        <hasSeverity>medium</hasSeverity>
+        <hasDescription>Ventricular tachycardia (VT) is a fast, abnormal heart rhythm (arrhythmia). May last only a couple of seconds without causing harm</hasDescription>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AVNodalReentrantTachycardia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFlutter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureAtrialContractions"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Angina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Arrhythmia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#AtrialFibrillation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#CongenitalHeartDisease"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartAttack"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#HeartFailure"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BicuspidAorticValve"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PulmonaryStenosis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#SubaorticStenosis"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#BiventricularHeartFailure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Left-sidedHeartFailure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Right-sidedHeartFailure"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ChestPain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Dizziness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fainting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Fatigue"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Lightheadedness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Nausea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Palpitations"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ShortnessOfBreath"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Disease"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#People"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Symptoms"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#Long-standingPersistentAfib"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#ParoxysmalAfib"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PersistentAfib"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#PrematureVentricularContractions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularFibrillation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VentricularTachycardia"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#StableAngina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#UnstableAngina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/qwert/ontologies/2023/8/HeartOntology#VariantAngina"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
